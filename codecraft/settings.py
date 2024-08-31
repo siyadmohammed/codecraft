@@ -20,7 +20,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 DEBUG = False
-ALLOWED_HOSTS = ['codecraft.onrender.com', 'codecraftventures.in']
+ALLOWED_HOSTS = ["codecraft-83at.onrender.com", 'codecraftventures.in']
 
 
 # Application definition
