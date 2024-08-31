@@ -29,40 +29,26 @@
   
   <!-- Main CSS File -->
   <link href="{% static 'css/main.css' %}" rel="stylesheet">
-  
-  <!-- =======================================================
-  * Template Name: Append
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="services-details-page">
 
-  <header id="header" class="header d-flex align-items-center sticky-top">
+  <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
       <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Codecraft</h1><span>.</span>
+        <img src="{% static 'img/logoblack.png' %}" alt="">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="{% url 'index' %}#hero">Home</a></li>
-          <li><a href="{% url 'index' %}#about">services</a></li>
+          <li><a href="{% url 'index' %}#hero" class="active">Home</a></li>
+          <li><a href="{% url 'index' %}#about">Services</a></li>
           <li><a href="{% url 'index' %}#portfolio">Portfolio</a></li>
-
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
-    
+  
+        </ul>      
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="{% url 'index' %}#about">Get Started</a>
-
     </div>
   </header>
 
@@ -107,6 +93,7 @@
                 <a href="#academic" class="active"><i class="bi bi-arrow-right-circle"></i><span>Academic Project</span></a>
                 <a href="#machine" class="active"><i class="bi bi-arrow-right-circle"></i><span>Machine Learning</span></a>
                 <a href="#uiux" class="active"><i class="bi bi-arrow-right-circle"></i><span>UI UX</span></a>
+                <a href="#desktopapps" class="active"><i class="bi bi-arrow-right-circle"></i><span>Desktop Apps</span></a>
               </div>
             </div><!-- End Services List -->
 
@@ -116,7 +103,7 @@
               <i class="bi bi-headset help-icon"></i>
               <a href="{% url 'index' %}#contacct"><h4>Have a Question?</h4></a>
               <p class="d-flex align-items-center mt-2 mb-0"><i class="bi bi-telephone me-2"></i> <span>+91 8848570115</span></p>
-              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="codecraftventures@gmail.com">contact@example.com</a></p>
+              <p class="d-flex align-items-center mt-1 mb-0"><i class="bi bi-envelope me-2"></i> <a href="codecraftventures@gmail.com">codecraftventures@gmail.com</a></p>
             </div>
 
           </div>
@@ -130,7 +117,7 @@
    
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <h2 id="web">Web Development</h2>
-            <img src="{% static 'img/services.jpg' %}" alt="" class="img-fluid services-img">
+            <img src="{% static 'img/web.jpg' %}" alt="" class="img-fluid services-img">
 
             <p>
               At Codecraft., we specialize in crafting visually stunning and highly functional websites that cater to your business needs. Our team of experienced developers and designers work collaboratively to deliver a seamless user experience, ensuring that your website not only looks great but also performs exceptionally.            </p>
@@ -149,7 +136,7 @@
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <h2 id="app">App Development</h2>
 
-            <img src="{% static 'img/services.jpg' %}" alt="" class="img-fluid services-img">
+            <img src="{% static 'img/app.jpg' %}" alt="" class="img-fluid services-img">
             <p>
               At Codecraft., we bring your ideas to life by developing robust, user-friendly mobile and web applications that meet the demands of today's digital landscape. Our team of skilled developers is dedicated to delivering high-quality apps that provide an exceptional user experience across all platforms.
             </p>
@@ -168,7 +155,7 @@
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <h2 id="academic">Academic Projects</h2>
 
-            <img src="{% static 'img/services.jpg' %}" alt="" class="img-fluid services-img">
+            <img src="{% static 'img/academic.jpg' %}" alt="" class="img-fluid services-img">
             <p>
               At Codecraft., we support students and researchers in bringing their academic projects to life by providing expert guidance and development services. Our team is committed to helping you achieve excellence in your academic endeavors with cutting-edge technology and innovative solutions.            </p>
             <ul>
@@ -185,7 +172,7 @@
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <h2 id="machine">Machine Learning</h2>
 
-            <img src="{% static 'img/services.jpg' %}" alt="" class="img-fluid services-img">
+            <img src="{% static 'img/ml.jpg' %}" alt="" class="img-fluid services-img">
             <p>
               At Codecraft., we specialize in delivering advanced machine learning solutions that transform data into actionable insights. Our expertise spans various industries, helping businesses and researchers harness the power of AI to drive innovation and solve complex problems.            </p>
             <ul>
@@ -202,7 +189,7 @@
           <div class="col-lg-8 ps-lg-5" data-aos="fade-up" data-aos-delay="200">
             <h2 id="uiux">UI UX Design</h2>
 
-            <img src="{% static 'img/services.jpg' %}" alt="" class="img-fluid services-img">
+            <img src="{% static 'img/uiux.jpg' %}" alt="" class="img-fluid services-img">
             <p>
               At Codecraft., we craft intuitive and aesthetically pleasing user interfaces that offer seamless experiences. Our focus on user-centric design ensures that your digital products are not only visually appealing but also functional and easy to use.            </p>
             <ul>
@@ -228,20 +215,20 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
         <div class="col-lg-5 col-md-12 footer-about">
           <a href="index.html" class="logo d-flex align-items-center">
-            <span class="sitename">Append</span>
+            <span class="sitename">Codecraft</span>
           </a>
-          <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita valies darta donna mare fermentum iaculis eu non diam phasellus.</p>
+          <p>We prioritize meeting our clients' needs, driving them swiftly into the future with cutting-edge IT solutions.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/code-craft-ventures/about/?viewAsMember=true"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -257,34 +244,30 @@
         <div class="col-lg-2 col-6 footer-links">
           <h4>Our Services</h4>
           <ul>
-            <li><a href="#web">Web Development</a></li>
-            <li><a href="#app">App Development</a></li>
-            <li><a href="#academic">Academic Projects</a></li>
-            <li><a href="#machine">Machine Learning</a></li>
-            <li><a href="#uiux">UI UX</a></li>
+            <li><a href="{% url 'services' %}#web">Web Development</a></li>
+            <li><a href="{% url 'services' %}#app">App Development</a></li>
+            <li><a href="{% url 'services' %}#academic">Academic Projects</a></li>
+            <li><a href="{% url 'services' %}#machine">Machine Learning</a></li>
+            <li><a href="{% url 'services' %}#uiux">UI UX</a></li>
+            <li><a href="{% url 'services' %}#desktopapps">Desktop Apps</a></li>
           </ul>
         </div>
 
         <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
           <h4>Contact Us</h4>
-          <p>A108 Adam Street</p>
-          <p>New York, NY 535022</p>
-          <p>United States</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+1 5589 55488 55</span></p>
-          <p><strong>Email:</strong> <span>info@example.com</span></p>
+          <p>Kakkanad</p>
+          <p>Kerala, Kochi</p>
+          <p>India</p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 8848570115 , <br> +91 7736783667</span></p>
+          <p><strong>Email:</strong> <span>codecraftventures@gmail.com</span></p>
         </div>
 
       </div>
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="sitename">Append</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="sitename">Codecraft</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 

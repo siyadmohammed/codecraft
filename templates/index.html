@@ -10,7 +10,7 @@
   <meta name="keywords" content="">
 
   <!-- Favicons -->
-  <link href="{% static 'img/favicon.png' %}" rel="icon">
+  <link href="{% static 'img/favicon.ico' %}" rel="icon">
   <link href="{% static 'img/apple-touch-icon.png' %}" rel="apple-touch-icon">
 
   <!-- Fonts -->
@@ -27,42 +27,26 @@
 
   <!-- Main CSS File -->
   <link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-
-
-  <!-- =======================================================
-  * Template Name: Append
-  * Template URL: https://bootstrapmade.com/append-bootstrap-website-template/
-  * Updated: Aug 07 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
 <body class="index-page">
 
   <header id="header" class="header d-flex align-items-center fixed-top">
     <div class="container-fluid position-relative d-flex align-items-center justify-content-between">
-
       <a href="{% url 'index' %}" class="logo d-flex align-items-center me-auto me-xl-0">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h2 class="sitename">codecraft</h2><span>.</span>
+        <img src="{% static 'img/logo.png' %}" alt="">
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
           <li><a href="{% url 'index' %}#hero" class="active">Home</a></li>
-          <li><a href="{% url 'index' %}#about">About</a></li>
+          <li><a href="{% url 'index' %}#about">Services</a></li>
           <li><a href="{% url 'index' %}#portfolio">Portfolio</a></li>
-          
-
-
           <li><a href="{% url 'index' %}#contact">Contact</a></li>
+  
+        </ul>      
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
-
-      <a class="btn-getstarted" href="{% url 'index' %}#about">Get Started</a>
-
     </div>
   </header>
 
@@ -81,7 +65,8 @@
           </div>
           <div class="col-lg-5" data-aos="fade-up" data-aos-delay="300">
           <!-- empty div -->
-          <a class="btn btn-secondary btn-getstarted" href="{% url 'index' %}#contact">Get a Quote</a>
+          <a class="btn btn-secondary btn-getstarted" href="https://wa.me/917736783667?text=Hello%2C%20I%20am%20interested%20in%20your%20services#contact">Talk now</a>
+          <a class="btn btn-secondary btn-getstarted" href="https://calendly.com/ziyad-ma-mohammed2001/30min">Get a Quote</a>
 
           </div>
         </div>
@@ -151,42 +136,57 @@
             <div class="row gy-4 icon-boxes">
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+                <a href="{% url 'services' %}" class="stretched-link">
                 <div class="icon-box">
                   <i class="bi bi-code-slash"></i>
-                  <h3><a href="{% url 'services' %}" class="stretched-link">Web Development</a></h3>
+                  <h3>Web Development</h3>
                   <p>We specialize in creating responsive, high-performance websites that are tailored to your business needs.</p>
-                </div>
+                </div></a>
               </div> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="300">
+                <a href="{% url 'services' %}" class="stretched-link">
                 <div class="icon-box">
                   <i class="bi bi-phone"></i>
-                  <h3><a href="{% url 'services' %}" class="stretched-link">App Development</a></h3>
+                  <h3>App Development</h3>
                   <p> We build powerful mobile and web applications designed to enhance user experience. </p>
                 </div>
-              </div> <!-- End Icon Box -->
+              </div></a> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="400">
+                <a href="{% url 'services' %}" class="stretched-link">
                 <div class="icon-box">
                   <i class="bi bi-book"></i>
-                  <h3><a href="{% url 'services' %}" class="stretched-link">Academic Project</h3></a>
+                  <h3>Academic Project</h3>
                   <p>We provide expert guidance and support for academic projects, helping students and researchers bring their ideas to life.</p>
-                </div>
+                </div></a>
               </div> <!-- End Icon Box -->
 
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <a href="{% url 'services' %}" class="stretched-link">
                 <div class="icon-box">
                   <i class="bi bi-gear"></i>
-                  <h3><a href="{% url 'services' %}" class="stretched-link">Machine Learning</a></h3>
+                  <h3>Machine Learning</h3>
                   <p> We harness the power of data to create intelligent solutions that automate processes, enhance decision-making, and uncover insights.</p>
-                </div>
+                </div></a>
               </div> <!-- End Icon Box -->
+
               <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <a href="{% url 'services' %}" class="stretched-link">
                 <div class="icon-box">
                   <i class="bi bi-palette"></i>
-                  <h3><a href="{% url 'services' %}" class="stretched-link">UI/UX Design</a></h3>
+                  <h3>UI/UX Design</h3>
                   <p>Our UI/UX design services focus on creating seamless, enjoyable experiences that keep users engaged and satisfied, ensuring that every interaction with your product is smooth and meaningful..</p>
-                </div>
+                </div></a>
+              </div> <!-- End Icon Box -->
+
+              <div class="col-md-6" data-aos="fade-up" data-aos-delay="500">
+                <a href="{% url 'services' %}" class="stretched-link">
+                <div class="icon-box">
+                  <i class="bi bi-app"></i>
+                  <h3>Desktop Apps</h3>
+                  <p>Our desktop app development services focus on creating robust, high-performance applications that provide a seamless, enjoyable experience, ensuring that every interaction with your software is efficient and impactful.</p>
+                </div></a>
               </div> <!-- End Icon Box -->
             </div>
           </div>
@@ -205,7 +205,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Portfolio</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Digital Dreams</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -215,7 +215,6 @@
           <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
             <li data-filter="*" class="filter-active">All</li>
             <li data-filter=".filter-app">App</li>
-            <li data-filter=".filter-product">Card</li>
             <li data-filter=".filter-branding">Web</li>
           </ul><!-- End Portfolio Filters -->
 
@@ -224,8 +223,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="{% static 'img\portfolio\app1.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
+                <h4>Ecommerce Application </h4>
+                <p>Single vendor and multi vendor mobile applications</p>
                 <a href="{% static 'img\portfolio\app1.jpg' %}" title="App 1" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -233,40 +232,19 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="{% static 'img\nri1.png' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
+                <h4>Portfolio/Display webpages</h4>
+                <p>Fully functional websites for organizations</p>
                 <a href="{% static 'img\nri1.png' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 1</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="" title="Product 1" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-
-
+      
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="{% static 'img\portfolio\app2.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
+                <h4>Ecommerce Application </h4>
+                <p>Single vendor and multi vendor mobile applications</p>
                 <a href="{% static 'img\portfolio\app2.jpg' %}" title="App 2" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
-              </div>
-            </div><!-- End Portfolio Item -->
-
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" class="img-fluid" alt="">
-              <div class="portfolio-info">
-                <h4>Product 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-5.jpg" title="Product 2" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
@@ -274,8 +252,8 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
               <img src="{% static 'img\nnri2.png' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 2</h4>
-                <p>Lorem ipsum, dolor sit</p>
+                <h4>Portfolio/Display webpages</h4>
+                <p>Fully functional websites for organizations</p>
                 <a href="{% static 'img\nnri2.png' %}" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
@@ -284,32 +262,64 @@
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-app">
               <img src="{% static 'img\portfolio\app-1.jpg' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>App 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
+                <h4>Mobile apps for monitoring operations </h4>
+                <p>Single page or multipage dedicated mobile apps </p>
                 <a href="{% static 'img\portfolio\app-1.jpg' %}" title="App 3" data-gallery="portfolio-gallery-app" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
-            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-product">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" class="img-fluid" alt="">
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="{% static 'img\hrapp2.png' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Product 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-8.jpg" title="Product 3" data-gallery="portfolio-gallery-product" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>HR Assistance web app</h4>
+                <p>Update Employee Details</p>
+                <a href="{% static 'img\hrapp2.png' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
             </div><!-- End Portfolio Item -->
 
             <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
-              <img src="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" class="img-fluid" alt="">
+              <img src="{% static 'img\hrapp1.png' %}" class="img-fluid" alt="">
               <div class="portfolio-info">
-                <h4>Branding 3</h4>
-                <p>Lorem ipsum, dolor sit</p>
-                <a href="assets/img/masonry-portfolio/masonry-portfolio-9.jpg" title="Branding 2" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <h4>HR Assistance web app</h4>
+                <p>Made HR operations simple and automated</p>
+                <a href="{% static 'img\hrapp1.png' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
                 <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
               </div>
-            </div><!-- End Portfolio Item -->
+            </div><!-- End Portfolio Item -->  
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="{% static 'img\library2.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Library Management WebApp</h4>
+                <p>Books and Author management application</p>
+                <a href="{% static 'img\library2.png' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="{% static 'img\hrapp3.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>HR Assistance web app</h4>
+                <p>Automated Notification for document expiration</p>
+                <a href="{% static 'img\hrapp3.png' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item -->    
+            
+            <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-branding">
+              <img src="{% static 'img\library1.png' %}" class="img-fluid" alt="">
+              <div class="portfolio-info">
+                <h4>Library Management WebApp</h4>
+                <p>Books and Author management application</p>
+                <a href="{% static 'img\library1.png' %}" title="Branding 1" data-gallery="portfolio-gallery-branding" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                <a href="portfolio-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+              </div>
+            </div><!-- End Portfolio Item --> 
+
+            
 
           </div><!-- End Portfolio Container -->
 
@@ -325,7 +335,7 @@
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
         <h2>Contact</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
+        <p>Our Team will get back you soon</p>
       </div><!-- End Section Title -->
 
       <div class="container" data-aos="fade-up" data-aos-delay="100">
@@ -367,7 +377,7 @@
                   <i class="bi bi-clock"></i>
                   <h3>Open Hours</h3>
                   <p>Monday - Friday</p>
-                  <p>9:00AM - 05:00PM</p>
+                  <p>9:00AM - 09:00PM</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -422,7 +432,7 @@
 
   </main>
 
-  <footer id="footer" class="footer position-relative light-background">
+  <footer id="footer" class="footer position-relative dark-background">
 
     <div class="container footer-top">
       <div class="row gy-4">
@@ -430,12 +440,12 @@
           <a href="index.html" class="logo d-flex align-items-center">
             <span class="sitename">Codecraft</span>
           </a>
-          <p>Our Priority is Attending to the Demands of Your Clientele. By developing the newest IT experiences, we propel our clients quickly into the future.</p>
+          <p>We prioritize meeting our clients' needs, driving them swiftly into the future with cutting-edge IT solutions.</p>
           <div class="social-links d-flex mt-4">
             <a href=""><i class="bi bi-twitter-x"></i></a>
             <a href=""><i class="bi bi-facebook"></i></a>
             <a href=""><i class="bi bi-instagram"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
+            <a href="https://www.linkedin.com/company/code-craft-ventures/about/?viewAsMember=true"><i class="bi bi-linkedin"></i></a>
           </div>
         </div>
 
@@ -456,6 +466,7 @@
             <li><a href="{% url 'services' %}#academic">Academic Projects</a></li>
             <li><a href="{% url 'services' %}#machine">Machine Learning</a></li>
             <li><a href="{% url 'services' %}#uiux">UI UX</a></li>
+            <li><a href="{% url 'services' %}#desktopapps">Desktop Apps</a></li>
           </ul>
         </div>
 
@@ -464,7 +475,7 @@
           <p>Kakkanad</p>
           <p>Kerala, Kochi</p>
           <p>India</p>
-          <p class="mt-4"><strong>Phone:</strong> <span>+91 8848570115</span></p>
+          <p class="mt-4"><strong>Phone:</strong> <span>+91 8848570115 , <br> +91 7736783667</span></p>
           <p><strong>Email:</strong> <span>codecraftventures@gmail.com</span></p>
         </div>
 
@@ -472,13 +483,8 @@
     </div>
 
     <div class="container copyright text-center mt-4">
-      <p>© <span>Copyright</span> <strong class="sitename">Append</strong> <span>All Rights Reserved</span></p>
+      <p>© <span>Copyright</span> <strong class="sitename">Codecraft</strong> <span>All Rights Reserved</span></p>
       <div class="credits">
-        <!-- All the links in the footer should remain intact. -->
-        <!-- You can delete the links only if you've purchased the pro version. -->
-        <!-- Licensing information: https://bootstrapmade.com/license/ -->
-        <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
       </div>
     </div>
 

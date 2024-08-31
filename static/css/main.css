@@ -45,7 +45,7 @@
 }
 
 .dark-background {
-  --background-color: #060606;
+  --background-color: #101010;
   --default-color: #ffffff;
   --heading-color: #ffffff;
   --surface-color: #252525;
@@ -145,18 +145,20 @@ h6 {
 .header {
   color: var(--default-color);
   background-color: var(--background-color);
-  padding: 20px 0;
+  padding: 0px 0;
   transition: all 0.5s;
   z-index: 997;
 }
 
 .header .logo {
-  line-height: 1;
+  line-height: 1px;
 }
 
 .header .logo img {
-  max-height: 36px;
-  margin-right: 8px;
+  max-height: 80px; /* Maintain height */
+  margin-right: 8px; /* Adjust spacing */
+  width: 200px; /* Maintain aspect ratio */
+  max-width: 100%; /* Ensure it fits within the container */
 }
 
 .header .logo h1 {
@@ -222,9 +224,9 @@ h6 {
 /* Index Page Header on Scroll
 ------------------------------*/
 .index-page.scrolled .header {
-  --background-color: #ffffff;
+  --background-color: #000000;
   --heading-color: #32353a;
-  --nav-color: #3a3939;
+  --nav-color: #ffffff;
   --nav-hover-color: #e84545;
 }
 
