@@ -112,6 +112,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/5.1/howto/static-files/
 
 STATIC_URL = '/static/'
+STATICFILES_DIRS = [BASE_DIR / 'static']
 STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
@@ -130,3 +131,7 @@ EMAIL_PORT = 587  # For TLS
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'codecraftventures@gmail.com'
 EMAIL_HOST_PASSWORD = 'fgzv phwr ofrb igtd'
+
+CSRF_TRUSTED_ORIGINS = [
+    'https://codecraft-83at.onrender.com/',
+]
