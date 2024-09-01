@@ -16,11 +16,11 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-SECRET_KEY = 'f=&w^tosar*h-2#11c0a&(-g7go!mnyg2uesjfsrm5l)p5ra4s'
+#SECRET_KEY = 'f=&w^tosar*h-2#11c0a&(-g7go!mnyg2uesjfsrm5l)p5ra4s'
 
 
 DEBUG = False
-ALLOWED_HOSTS = ["codecraft-83at.onrender.com", 'codecraftventures.in']
+ALLOWED_HOSTS = ["codecraft-83at.onrender.com", 'codecraftventures.in','localhost', '127.0.0.1','www.codecraftventures.in']
 
 
 # Application definition
