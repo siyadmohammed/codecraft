@@ -3,7 +3,6 @@ from django.urls import path
 from . import views
 from .sitemaps import StaticViewSitemap
 
-# Define the sitemaps dictionary
 sitemaps = {
     'static': StaticViewSitemap,
 }
