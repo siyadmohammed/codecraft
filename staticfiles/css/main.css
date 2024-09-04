@@ -40,7 +40,7 @@
 /* Color Presets - These classes override global colors when applied to any section or element, providing reuse of the sam color scheme. */
 
 .light-background {
-  --background-color: #414141;
+  --background-color: #9b9b9b;
   --surface-color: #f0eeee;
 }
 
@@ -184,6 +184,10 @@ h6 {
   margin: 0;
   border-radius: 4px;
   transition: 0.3s;
+}
+
+.text-shadow-heading-p {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .header .btn-getstarted:hover,
@@ -712,7 +716,7 @@ h6 {
 section,
 .section {
   color: var(--default-color);
-  background-color: var(--background-color);
+  background-color: #939090;
   padding: 60px 0;
   scroll-margin-top: 98px;
   overflow: clip;
