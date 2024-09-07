@@ -19,7 +19,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'f=&w^tosar*h-2#11c0a&(-g7go!mnyg2uesjfsrm5l)p5ra4s'
 
 
-DEBUG = False
+DEBUG = True
 ALLOWED_HOSTS = ["codecraft-83at.onrender.com", 'codecraftventures.in','localhost', '127.0.0.1','www.codecraftventures.in']
 
 
